@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+from matplotlib import animation, rc
+from IPython.display import HTML
+import numpy as np
+import scipy.io as sio
+import pickle
+import random
+import csv
+
+artic_dir = '../../data/vowels/articulation.mat'
+acous_dir = '../../data/vowels/acoustics.mat'
+spkr_dir = '../../data/vowels/spkr_inf.csv'
+
+artic_raw = sio.loadmat(artic_dir)['articulation'][0,0]
+acous_raw = sio.loadmat(acous_dir)['acoustics'][0,0]
