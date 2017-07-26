@@ -4,8 +4,8 @@ from tools import read_data
 import scipy.io as sio
 
 # Load data
-acous_train = '../../data/vowels/train/acoustics_train.mat'
-artic_train = '../../data/vowels/train/articulation_train.mat'
+acous_train = '../../data/utterance1/train/acoustics_train.mat'
+artic_train = '../../data/utterance1/train/articulation_train.mat'
 
 acous_raw, artic_raw, labels = read_data.load_data(acous_train, artic_train)
 # acous_raw and artic_raw is list variable

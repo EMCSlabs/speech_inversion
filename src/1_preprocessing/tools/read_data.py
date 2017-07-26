@@ -67,6 +67,6 @@ def check_original_plot(x, y):
 
     anim = animation.FuncAnimation(fig, plot_frames,
                                    frames=x.shape[1],
-                                   interval=50, blit=False,
+                                   interval=10, blit=False,
                                    repeat=False)
     return HTML(anim.to_html5_video())
